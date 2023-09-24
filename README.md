@@ -3,7 +3,7 @@ PowerShell script that kills any Nostale processes running in background
 
 # Why ?
 As you mightve noticed, nostale lately started having an annoying bug, that sometimes keep nostale running in background even though you closed it.
-This is a powershell script, that upon running checks every 10 seconds, if there are any "Zombie" Nostale processes and kills them. 
+This is a powershell script, that upon running checks every 1 second, if there are any "Zombie" Nostale processes and kills them. 
 It doesnt kill regular nostale clients.
 
 # How to use ?
