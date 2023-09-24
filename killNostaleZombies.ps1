@@ -56,5 +56,5 @@ while ($true) {
     Write-Host "Finished killing zombie processes."
 
     # Wait for 10 seconds before running the script again
-    Start-Sleep -Seconds 10
+    Start-Sleep -Seconds 1
 }
