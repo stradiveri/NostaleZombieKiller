@@ -32,10 +32,10 @@ Function Check-RunAsAdministrator()
 Check-RunAsAdministrator
 
 # Hide powershell window
-# delete/comment out next 3 lines, if you want the script to be visible
-$t = '[DllImport("user32.dll")] public static extern bool ShowWindow(int handle, int state);'
-add-type -name win -member $t -namespace native
-[native.win]::ShowWindow(([System.Diagnostics.Process]::GetCurrentProcess() | Get-Process).MainWindowHandle, 0)
+# uncomment the next 3 lines, if you want the script to hide itself and run in background
+# $t = '[DllImport("user32.dll")] public static extern bool ShowWindow(int handle, int state);'
+# add-type -name win -member $t -namespace native
+#[native.win]::ShowWindow(([System.Diagnostics.Process]::GetCurrentProcess() | Get-Process).MainWindowHandle, 0)
  
 #Main script
 $baseName = "NostaleClientX"
